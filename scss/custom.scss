@@ -1,0 +1,82 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won't be available)
+:root {
+
+  --font-size-sm: clamp(0.8rem, 0.08vw + 0.78rem, 0.84rem);
+  --font-size-base: clamp(1rem, 0.23vw + 0.94rem, 1.13rem);
+  --font-size-md: clamp(1.25rem, 0.45vw + 1.14rem, 1.5rem);
+  --font-size-lg: clamp(1.56rem, 0.79vw + 1.36rem, 2rem);
+  --font-size-xl: clamp(1.95rem, 1.29vw + 1.63rem, 2.66rem);
+  --font-size-xxl: clamp(2.44rem, 2.02vw + 1.94rem, 3.55rem);
+  --font-size-xxxl: clamp(3.05rem, 3.06vw + 2.29rem, 4.73rem);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;800&display=swap');
+
+$font-family-sans-serif: 'Inter', sans-serif;
+
+// Colours 
+$primary: #1B1B1B;
+$secondary: #1E483D;
+$success: #ffffff;
+$info: #F2F2F2;
+$warning: #CCDDD0;
+$danger: #5D4A66;
+$light: #ffffff;
+$dark: #1B1B1B;
+
+// Navbar
+// $navbar-color: $success;
+// $navbar-hover-color: $success;
+// $navbar-active-color: $success;
+// $navbar-disabled-color: $secondary;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Then add additional custom code heres
+.intro-image {
+  object-fit: cover;
+}
+.intro-image.mobile {
+  display: none;
+}
+
+.nav-link {
+  color: $success;
+}
+
+.navbar-expand-lg .navbar-collapse {
+  justify-content: flex-end;
+}
+
+
+//media Quearies
+@media (max-width: 768px) {
+  .intro-image.desktop {
+    display: none;
+  }
+  .intro-image.mobile {
+    display: block;
+  }
+  
+  .jdl-foot-logo {
+    display: none;
+  }
+
+  .contact-location {
+    background: white;
+  }
+}
+
+
+@media (max-width: 700px) {
+  .contact-location.mobile {
+    background-color: none;
+  }
+
+  .hours-background-colour.mobile {
+    margin: none;
+  }
+}
