@@ -9,21 +9,22 @@
   <title>Contact</title>
 </head>
 
-
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <nav class="mb-5 navbar navbar-expand-lg bg-dark navbar-dark">
       <div class="container container-fluid">
-        <img class="navbar-brand" src="images/logo/jadelandrestaurant-white-180px copy.png" alt="small white logo of jadeland">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="#"><img class="navbar-brand" src="images/logo/jadelandrestaurant-white-180px copy.png" alt="small white logo of jadeland"></a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item"><a href="/index.html" class="nav-link">Homepage</a></li>
-            <li class="nav-item"><a href="/menu.html" class="nav-link">Menu</a></li>
-            <li class="nav-item"><a href="/contact.html" class="nav-link">Contact</a></li>
-          </ul>
+        
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="/index.html">Homepage</a>
+            <a class="nav-link" href="/menu.html">Menu</a>
+            <a class="nav-link" href="/contact.html">Contact</a>
+          </div>
         </div>
       </div>
     </nav>
@@ -47,7 +48,7 @@
       </div>
 
 
-      <div class="col-md">
+      <div class="mb-5 col-md">
         <h2 class="fw-bold">HOURS</h2>  
         <div class="bg-info p-3 hours-background-colour mobile">
           <p>Monday Closed</p>
@@ -61,5 +62,46 @@
       </div>
     </div>
   </section>
+ 
+
+  <!-- Google map section -->
+  <div class="container-fluid p-0">
+     <div class="row">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2800.8619327391852!2d-75.70708688821793!3d45.41212367095258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce044da7b8e9b5%3A0xf755f33de4ab7e12!2sJadeland!5e0!3m2!1sen!2sca!4v1702073446057!5m2!1sen!2sca" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+     </div>
+  </div>
+  
+
+  <!-- Footer Section-->
+  <footer class="bg-dark text-light">
+    <div class="container horizontal-row-foot">
+      <div class="py-5 container row">
+        <div class="col">
+          <h3 class="fw-bold">CONTACT INFORMATION</h3>
+          <h4>Address</h4> 
+          <p>625 Somerset Street West,Ottawa, O.N. K1R 5K3</p>
+          <h4>Phone</h4>
+          <p>613-233-0204</p>
+        </div>
+
+        <div class="col d-none d-lg-block">
+          <img src="images/logo/jadelandrestaurant-white-400px.png" alt="logo icon in white for Jadeland Restaurant">
+        </div>
+        
+        <div class="col text-end">
+          <h3 class="fw-bold">ORDER HERE</h3>
+          <p class="py-3">Find us on other platforms like Doordash and UberEats!</p>
+          
+          <!-- Icons for buttons leading to doordash/ubereats-->
+          <div class="d-flex justify-content-end gap-3">
+            <a href="https://www.doordash.com/en-CA"><img src="images/logo/doordash-icon.webp" alt="logo icon in black and white for Doordash"></a>
+
+            <a href="https://www.ubereats.com/ca"><img src="images/logo/ubereats-icon.webp" alt="logo icon in black and white for UberEats"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
   <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+</html>
